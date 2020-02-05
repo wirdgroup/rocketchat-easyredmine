@@ -32,4 +32,4 @@ let key = 'INSERTYOURAPIKEY';
 ### Demonstration
 **Send Link issue**<br>
 <img src=https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/screenshots/rocketchat_easyredmine_1.png><br>
-<img src=https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/screenshots/rocketchat_easyredmine_1.png>
+<img src=https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/screenshots/rocketchat_easyredmine_2.png>
