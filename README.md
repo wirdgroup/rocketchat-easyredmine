@@ -24,12 +24,12 @@ _Administration => Integrations => New Integration => Outgoing WebHook_
 
 7. Impersonate User: **False**
 
-8. Paste contents of [rocketchat_easyredmine_outgoing.js](https://github.com/wirdgroup/rocketchat-easyredmine/rocketchat_easyredmine_outgoing.js) into the _Script_ field. <br>**!! DON'T FORGET TO FILL IN THE API KEY OF AN EASYREDMINE USER !!**
+8. Paste contents of [rocketchat_easyredmine_outgoing.js](https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/rocketchat_easyredmine_outgoing.js) into the _Script_ field. <br>**!! DON'T FORGET TO FILL IN THE API KEY OF AN EASYREDMINE USER !!**
 ```
 let key = 'INSERTYOURAPIKEY';
 ```
 
 ### Demonstration
 **Send Link issue**<br>
-<img src=https://github.com/wirdgroup/rocketchat-easyredmine/screenshots/rocketchat_easyredmine_1.png><br>
-<img src=https://github.com/wirdgroup/rocketchat-easyredmine/screenshots/rocketchat_easyredmine_2.png>
+<img src=https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/screenshots/rocketchat_easyredmine_1.png><br>
+<img src=https://github.com/wirdgroup/rocketchat-easyredmine/blob/master/screenshots/rocketchat_easyredmine_1.png>
