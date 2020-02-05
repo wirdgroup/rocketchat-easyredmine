@@ -1,6 +1,6 @@
 # Overview
-We started using: RrocketChat: as an internal communication tool @[WIRDGroup] (https://github.com/wirdgroup) and we needed to integrate with our project management tool: EasyRedmine:<br>
-rocketchat_easyredmine_outgoing.js is a script which allows you to link the hastag of an issuse easyredmine in the following chans:
+We are using RocketChat as an internal communication tool @[WIRDGroup] (https://github.com/wirdgroup) and we needed to integrate our project management tool EasyRedmine with it.<br>
+rocketchat_easyredmine_outgoing.js is a script which allows you to link the hastag of an easyredmine issue in the following chans:
 ```
 all_direct_messages, all_public_channels, all_private_groups
 ```
