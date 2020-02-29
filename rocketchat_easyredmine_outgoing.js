@@ -6,7 +6,7 @@ class Script {
         const trigger = request.data.trigger_word.toLowerCase();
         const phrase = request.data.text.toLowerCase().replace(trigger, '').replace(/ /g, '');
         let u = '';
-        let key = 'INSERTYOURAPIKEY';
+        let key = '1a76b8077a9177dc6e22540f31ce2801d0fbed94';
         u = request.url + phrase + '.xml?include=&key=' + key;
         return {
             phrase: phrase,
@@ -21,9 +21,11 @@ class Script {
         var subject = response.content_raw.match(/(?<=<subject>)(.*)(?=<\/subject>)/g);
         var assigned_to = response.content_raw.match(/(?<=<assigned_to id\=\"\d+\" name\=\")(.*)(?=\" avatar=")/g);
         var description = response.content_raw.match(/(?<=<description>)([\S\s]*?)(?=<\/description>)/g);
-        var author = response.content_raw.match(/(?<=<author id\=\"\d+\" name\=["'])(.*?)(?=["']\/>)/g);
+      	var author = response.content_raw.match(/(?<=<author id\=\"\d+\" name\=["'])(.*?)(?=["']\/>)/g);
         var due_date = response.content_raw.match(/(?<=<due_date>)(.*)(?=<\/due_date>)/g);
-        let textCustom = '**Author:**\n' + author + '\n\n**Description:**\n' + description + '\n\n**Due date:**\n' + due_date + '\n\n**Assigned to:**\n' + assigned_to
+        description = description.toString().replace(/(&lt;.*?&gt;)/g,' ');
+      	description = description.toString().replace(/(&amp;lt;)/g,'<');
+      	let textCustom = '**Author:**\n' + author + '\n\n**Description:**\n' + description + '\n\n**Due date:**\n' + due_date + '\n\n**Assigned to:**\n' + assigned_to
         return {
             content: {
                 attachments: [{
