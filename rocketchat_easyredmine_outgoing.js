@@ -6,7 +6,7 @@ class Script {
         const trigger = request.data.trigger_word.toLowerCase();
         const phrase = request.data.text.toLowerCase().replace(trigger, '').replace(/ /g, '');
         let u = '';
-        let key = '1a76b8077a9177dc6e22540f31ce2801d0fbed94';
+        let key = 'USER_KEY_API';
         u = request.url + phrase + '.xml?include=&key=' + key;
         return {
             phrase: phrase,
